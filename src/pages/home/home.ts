@@ -7,13 +7,15 @@ import {UsersPage} from "../users/users";
   templateUrl: 'home.html'
 })
 export class HomePage {
+  //
+  // constructor(public navCtrl: NavController) {
+  //
+  // }
+  //
+  // onGoToUsers() {
+  //   this.navCtrl.push(UsersPage);
+  // }
+  // -----------        save property usrPage instead of using navCtrl
 
-  constructor(public navCtrl: NavController) {
-
-  }
-
-  onGoToUsers() {
-    this.navCtrl.push(UsersPage);
-  }
-
+    usrPage = UsersPage;
 }
