@@ -17,5 +17,12 @@ export class HomePage {
   // }
   // -----------        save property usrPage instead of using navCtrl
 
-    usrPage = UsersPage;
+  usrPage = UsersPage;
+
+  constructor(private navCtrl: NavController) {}
+
+  onGoToUser() {
+    this.navCtrl.push(this.usrPage)
+      .then((msg) => msg ? console.log('access successful: ' + msg) : console.log('access failed: ' + msg));
+  }
 }
